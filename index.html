@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+</head>
 <style>
 p {
   font-family: 'helvetica neue', helvetica, sans-serif;
@@ -16,20 +18,23 @@ p {
   cursor:pointer;
 }
 </style>
-<script>
-var para = document.querySelector('p');
 
-para.addEventListener('click', updateName);
-
-function updateName() {
-  var name = prompt('Enter a new name');
-  para.textContent = 'Player 1: ' + name;
-}
-</script>
 <body>
 <h1> blah blah </h1>
 
 <p> Player 1: Brandon</p>
+
+
+<script>
+  var para = document.querySelector('p');
+
+  para.addEventListener('click', updateName);
+
+  function updateName() {
+    var name = prompt('Enter a new name');
+    para.textContent = 'Player 1: ' + name;
+  }
+</script>
 
 </body>
 </html>
